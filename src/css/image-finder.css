@@ -1,4 +1,3 @@
-
 .search-form {
     display: flex;
     justify-content: center;
@@ -87,17 +86,6 @@ input::placeholder {
     transform: scale(1.04);
 }
 
-.load-more {
-    /* display: block; */
-    margin-top: 25px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 169px;
-    
-    
-}
-
 @media screen and (max-width: 600px) {
     .search-form {
         flex-direction: column;
@@ -123,16 +111,8 @@ input::placeholder {
         height: 50px;
     }
 
-    .load-more {
-        margin-top: 15px;
-        margin-bottom: 25px;
-        width: 100%;
-    }
-
     .gallery {
         padding: 10px;
         grid-template-columns: 1fr;
     }
-
-   
 }
