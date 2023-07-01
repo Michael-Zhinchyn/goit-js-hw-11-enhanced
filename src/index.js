@@ -18,7 +18,6 @@ let currentPage = 1;
 
 form.addEventListener('submit', onSubmit);
 
-// Функція при натиску кнопки SEARCH
 function onSubmit(evt) {
   evt.preventDefault();
   searchQuery = evt.target.elements.searchQuery.value;
@@ -69,7 +68,7 @@ async function getImages() {
       behavior: 'smooth',
     });
   } catch (error) {
-    console.error(error);
+    Notify.failure('Something went wrong...');
   }
 }
 
