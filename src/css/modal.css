@@ -50,6 +50,9 @@
 .modal-section {
     display: flex;
     flex-direction: column;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-radius: 12px;
 }
 
 .site-version {
@@ -84,6 +87,7 @@
 
 .gh-logo-block {
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 

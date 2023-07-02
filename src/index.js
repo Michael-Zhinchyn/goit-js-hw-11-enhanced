@@ -127,3 +127,9 @@ function onLoad(entries, observer) {
     }
   });
 }
+
+// При виході зі сторінки
+window.onbeforeunload = function () {
+  // Зберігаємо URL сторінки в localStorage перед виходом зі сторінки
+  localStorage.setItem('previousPage', window.location.href);
+};
