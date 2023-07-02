@@ -14,7 +14,7 @@
     color: rgb(65, 57, 232);
     text-align: center;
     position: absolute;
-    top: 55px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -23,7 +23,7 @@
     color: rgb(155, 151, 228);
     text-align: center;
     position: absolute;
-    top: 130px;
+    top: 95px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -43,7 +43,7 @@
     padding-right: 135px;
     display: flex;
     position: relative;
-    top: 220px;
+    top: 170px;
     left: 0;
     width: 100vw;
 
