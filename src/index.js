@@ -59,12 +59,20 @@ async function getImages() {
     const response = await axios.get(`${BASIC_URL}?${param}`);
     const markUp = createMarkUp(response.data.hits);
     let searchResult = response.data.total;
+    let totalReceivedImages;
+
+    totalReceivedImages += response.data.hits.length;
 
     if (searchResult === 0) {
       Notiflix.Notify.failure('Nothing found by Your request...');
     } else {
       soundFx.play();
       Notiflix.Notify.success(`Hooray! We found ${searchResult} images.`);
+    }
+
+    if (totalReceivedImages >= searchResult) {
+      Notiflix.Notify.info('No more images left to fetch');
+      return;
     }
 
     gallery.insertAdjacentHTML('beforeend', markUp);
@@ -86,9 +94,10 @@ async function getImages() {
       top: cardHeight * 2,
       behavior: 'smooth',
     });
+
     observer.observe(target);
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 }
 
