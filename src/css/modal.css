@@ -91,6 +91,10 @@
     text-align: center;
 }
 
+b {
+    color: rgb(155, 151, 228); 
+}
+
 .footer {
     position: absolute;
     color: rgba(155, 151, 228, 0.436);
