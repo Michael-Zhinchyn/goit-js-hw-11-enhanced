@@ -105,16 +105,17 @@ b {
 
 .volume {
     position: absolute;
-    top: 50px;
-    left: -35px;
-    width: 100px;
-    opacity: 0.5;
-    transform: rotate(-90deg);
+    top: 40px;
+    left: 35px;
+    width: 190px;
+    opacity: 0.25;
+    transition: opacity 200ms;
+   
     
 }
 
 .volume:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
