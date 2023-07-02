@@ -102,19 +102,15 @@ input::placeholder {
 }
 
 .to-top-btn {
-    color: rgba(144, 140, 227, 0.564);
-    width: 40px;
-    height: 30px;
     position: fixed;
     bottom: 40px;
     right: 22px;
-    z-index: 99;
+    width: 28px;
+  
+    color: rgba(144, 140, 227, 0.564);
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 25px;
 }
 
 .to-top-btn:hover {

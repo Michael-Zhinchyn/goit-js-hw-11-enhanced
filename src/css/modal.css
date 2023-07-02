@@ -68,7 +68,7 @@
     border-radius: 8px;
     border: #1c27a2e1 1px solid;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.4px;
     color: #fff;
     cursor: pointer;
@@ -89,8 +89,8 @@
 }
 
 .gh-logo-block {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 22px;
+    margin-bottom: 22px;
     text-align: center;
 }
 
