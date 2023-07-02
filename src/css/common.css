@@ -82,6 +82,32 @@ html {
     color: transparent;
 }
 
+/* Цей код стосується всіх веб-сторінок */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* або доріжка */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    /* Колір доріжки */
+}
+
+/* або повзунок */
+::-webkit-scrollbar-thumb {
+    background: rgba(206, 205, 235, 0.322);
+    border-radius: 8px;
+    transition: background var(--basic-transition);
+   
+}
+
+/* Повзунок при наведенні миші */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+    
+}
+
 @keyframes animStar {
     from {
         transform: translateY(0px);
