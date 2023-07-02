@@ -29,7 +29,6 @@ window.onYouTubeIframeAPIReady = function () {
 };
 
 function onPlayerReady(event) {
-  // Once the player is ready, stop the video (so it does not autoplay)
   event.target.stopVideo();
   event.target.setVolume(30);
 }
