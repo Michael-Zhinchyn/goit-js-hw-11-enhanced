@@ -58,6 +58,7 @@ input {
     border-radius: 8px;
     padding-left: 15px;
     border: #1c27a2e1 1px solid;
+    box-sizing: border-box;
 }
 
 input:focus {
