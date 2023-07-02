@@ -6,14 +6,13 @@ import Notiflix from 'notiflix';
 
 Notiflix.Notify.init({
   width: '300px',
-  position: 'right-top', // або будь-яке інше положення, яке ви хочете
+  position: 'right-top',
   distance: '45px',
-  fontSize: '18px',
+  fontSize: '15px',
   fontAwesomeIconSize: '30px',
   warning: {
     textColor: 'black',
   },
-  // додаткові параметри
 });
 
 import axios from 'axios';
@@ -30,11 +29,21 @@ const API_KEY = '37718597-f2a776258a6c278a1ed771723';
 let searchQuery = '';
 let lightbox;
 let currentPage = 1;
+let successMessageShown = false;
+let soundPlayed = false;
 
 form.addEventListener('submit', onSubmit);
 
-function onSubmit(evt) {
+async function onSubmit(evt) {
+  // зробіть функцію асинхронною
   evt.preventDefault();
+
+  // Очищаємо галерею перед новим пошуком
+  gallery.innerHTML = '';
+  // Скидаємо значення флажків
+  successMessageShown = false;
+  soundPlayed = false;
+
   searchQuery = evt.target.elements.searchQuery.value;
 
   if (searchQuery === '') {
@@ -42,7 +51,20 @@ function onSubmit(evt) {
     return;
   }
 
-  getImages();
+  const searchResult = await getImages();
+
+  if (searchResult > 0) {
+    if (!successMessageShown) {
+      Notiflix.Notify.success(`Hooray! We found ${searchResult} images.`);
+      successMessageShown = true;
+    }
+
+    if (!soundPlayed) {
+      soundFx.play();
+      soundPlayed = true;
+    }
+  }
+
   currentPage += 1;
   evt.target.elements.searchQuery.value = '';
 }
@@ -62,20 +84,9 @@ async function getImages() {
     const response = await axios.get(`${BASIC_URL}?${param}`);
     const markUp = createMarkUp(response.data.hits);
     let searchResult = response.data.total;
-    let totalReceivedImages;
-
-    totalReceivedImages += response.data.hits.length;
 
     if (searchResult === 0) {
       Notiflix.Notify.failure('Nothing found by Your request...');
-    } else {
-      soundFx.play();
-      Notiflix.Notify.success(`Hooray! We found ${searchResult} images.`);
-    }
-
-    if (totalReceivedImages >= searchResult) {
-      Notiflix.Notify.info('No more images left to fetch');
-      return;
     }
 
     gallery.insertAdjacentHTML('beforeend', markUp);
@@ -99,6 +110,8 @@ async function getImages() {
     });
 
     observer.observe(target);
+
+    return searchResult;
   } catch (error) {
     console.error(error);
   }
@@ -142,7 +155,7 @@ function createMarkUp(data) {
 
 let options = {
   root: null,
-  rootMargin: '200px',
+  rootMargin: '400px',
   threshold: 1.0,
 };
 
@@ -154,7 +167,6 @@ function onLoad(entries, observer) {
       observer.unobserve(entry.target);
       getImages();
       currentPage += 1;
-      observer.observe(target);
     }
   });
 }
