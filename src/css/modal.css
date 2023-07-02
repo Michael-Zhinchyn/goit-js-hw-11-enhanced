@@ -105,14 +105,18 @@ b {
 
 .volume {
     position: absolute;
-    top: 40px;
+    top: 15px;
     left: 35px;
     width: 190px;
-    opacity: 0.25;
-    transition: opacity 200ms;
-   
-    
+    opacity: 0.2;
+    transition: opacity 180ms;
 }
+
+.volume:focus {
+    outline: none
+}
+
+
 
 .volume:hover {
     opacity: 1;
