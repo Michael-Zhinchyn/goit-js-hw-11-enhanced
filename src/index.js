@@ -9,6 +9,8 @@ import axios from 'axios';
 export const form = document.getElementById('search-form');
 const gallery = document.querySelector('.gallery');
 const target = document.querySelector('.js-guard');
+const soundFx = document.querySelector('.soundFx');
+soundFx.volume = 0.1;
 
 const BASIC_URL = 'https://pixabay.com/api/';
 const API_KEY = '37718597-f2a776258a6c278a1ed771723';
@@ -29,9 +31,7 @@ function onSubmit(evt) {
   }
 
   getImages();
-
   currentPage += 1;
-  observer.observe(target);
 }
 
 // Функція HTTP запиту і отримання фото
@@ -48,6 +48,10 @@ async function getImages() {
   try {
     const response = await axios.get(`${BASIC_URL}?${param}`);
     const markUp = createMarkUp(response.data.hits);
+    let searchResult = response.data.total;
+
+    soundFx.play();
+    Notify.success(`Hooray! We found ${searchResult} images.`);
 
     gallery.insertAdjacentHTML('beforeend', markUp);
 
@@ -71,6 +75,8 @@ async function getImages() {
   } catch (error) {
     Notify.failure('Something went wrong...');
   }
+
+  observer.observe(target);
 }
 
 // Функція створення розмітки
