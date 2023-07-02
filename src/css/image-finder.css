@@ -1,37 +1,43 @@
 .search-form {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     gap: 20px;
 }
 
 button {
-    display: block;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #090a0f00;
     border-radius: 8px;
     border: #1c27a2e1 1px solid;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.4px;
-    color: #fff;
+    color: rgb(124, 120, 207);
     cursor: pointer;
     width: 220px;
     height: 56px;
-    text-decoration: none;
     transition: color var(--basic-transition), border var(--basic-transition);
 }
 
 button:hover {
     background: #090f5325;
     border-color: #2d3ce2;
+    color: #fff;
 }
 
 .button-text {
     text-align: center;
-    align-items: center;
     margin-right: 15px;
+    
+}
+
+.button-text:hover {
+    color: #fff;
 }
 
 .logo {
@@ -45,6 +51,7 @@ input {
     letter-spacing:2px;
     text-align: center;
     width: 350px;
+    height: 56px;
     background-color: #00000000;
     color: rgb(210, 209, 232);
     border-radius: 8px;
