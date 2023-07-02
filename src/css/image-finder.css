@@ -153,4 +153,14 @@ input::placeholder {
         padding: 10px;
         grid-template-columns: 1fr;
     }
+
+    .photo-card {
+        padding: 10px;
+        /* Reduced padding to ensure content fits inside */
+        margin: 10px;
+        border-bottom: #7277be84 1px solid;
+        border-top: #7277be82 1px solid;
+        border-radius: 20px;
+        text-align: center;
+    }
 }
