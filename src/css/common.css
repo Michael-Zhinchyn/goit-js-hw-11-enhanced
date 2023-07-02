@@ -13,12 +13,16 @@ a {
 
 b {
     font-weight: 500;
-    color: #435e7c;
+    color: #516e8f;
 }
 
 
 .image {
     border-radius: 10px;
+}
+
+body {
+    overflow: hidden;
 }
 
 body,
@@ -87,30 +91,42 @@ html {
     color: transparent;
 }
 
-/* Цей код стосується всіх веб-сторінок */
+/* Стилі для вертикального скрол-бару */
 ::-webkit-scrollbar {
     width: 10px;
-
 }
 
-/* або доріжка */
 ::-webkit-scrollbar-track {
     background: #f1f1f100;
-    /* Колір доріжки */
 }
 
-/* або повзунок */
 ::-webkit-scrollbar-thumb {
     background: rgba(206, 205, 235, 0.322);
     border-radius: 8px;
     transition: background var(--basic-transition);
-   
 }
 
-/* Повзунок при наведенні миші */
 ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
-    
+}
+
+/* Стилі для горизонтального скрол-бару */
+::-webkit-scrollbar-horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-horizontal {
+    background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb-horizontal {
+    background: rgba(206, 205, 235, 0.322);
+    border-radius: 8px;
+    transition: background var(--basic-transition);
+}
+
+::-webkit-scrollbar-thumb-horizontal:hover {
+    background: #ffffff;
 }
 
 @keyframes animStar {
