@@ -11,13 +11,10 @@ volumeSlider.addEventListener('input', event => {
 });
 
 form.style.display = 'none';
-
 document.getElementById('player').style.visibility = 'hidden';
-
 let player;
 
 window.onYouTubeIframeAPIReady = function () {
-  console.log('YouTube API is ready');
   player = new YT.Player('player', {
     height: '390',
     width: '640',
@@ -32,7 +29,7 @@ window.onYouTubeIframeAPIReady = function () {
 function onPlayerReady(event) {
   // Once the player is ready, stop the video (so it does not autoplay)
   event.target.stopVideo();
-  event.target.setVolume(35);
+  event.target.setVolume(30);
 }
 
 closeModalBtn.addEventListener('click', onClick);
