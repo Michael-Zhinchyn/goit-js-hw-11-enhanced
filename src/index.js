@@ -60,8 +60,12 @@ async function getImages() {
     const markUp = createMarkUp(response.data.hits);
     let searchResult = response.data.total;
 
-    soundFx.play();
-    Notiflix.Notify.success(`Hooray! We found ${searchResult} images.`);
+    if (searchResult === 0) {
+      Notiflix.Notify.failure('Nothing found by Your request...');
+    } else {
+      soundFx.play();
+      Notiflix.Notify.success(`Hooray! We found ${searchResult} images.`);
+    }
 
     gallery.insertAdjacentHTML('beforeend', markUp);
 
@@ -82,11 +86,10 @@ async function getImages() {
       top: cardHeight * 2,
       behavior: 'smooth',
     });
+    observer.observe(target);
   } catch (error) {
-    Notify.failure('Something went wrong...');
+    console.log(error);
   }
-
-  observer.observe(target);
 }
 
 // Функція створення розмітки
