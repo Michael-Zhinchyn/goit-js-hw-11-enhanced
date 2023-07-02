@@ -129,6 +129,10 @@
 
 @media screen and (max-width: 600px) {
 
+    .modal {
+        height: 100%
+    }
+
     .modal-title {
         top: 15px;
         font-size: 22px;
