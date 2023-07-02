@@ -38,6 +38,8 @@
 }
 
 .modal-content {
+    padding-left: 135px;
+    padding-right: 135px;
     display: flex;
     position: relative;
     top: 220px;
@@ -105,7 +107,7 @@
 
 .volume {
     position: absolute;
-    top: 30px;
+    top: 35px;
     right: -24px;
     width: 100px;
     opacity: 0.2;

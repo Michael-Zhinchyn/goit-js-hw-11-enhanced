@@ -98,7 +98,7 @@ input::placeholder {
 }
 
 .photo-card img:hover {
-    transform: scale(1.04);
+    transform: scale(1.1);
 }
 
 
