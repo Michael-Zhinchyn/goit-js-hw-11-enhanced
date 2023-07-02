@@ -106,9 +106,9 @@ b {
 .volume {
     position: absolute;
     top: 50px;
-    left: 0px;
+    left: -35px;
     width: 100px;
-    opacity: 0.25;
+    opacity: 0.5;
     transform: rotate(-90deg);
     
 }
