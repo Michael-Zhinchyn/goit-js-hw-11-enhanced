@@ -5,11 +5,14 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import Notiflix from 'notiflix';
 
 Notiflix.Notify.init({
-  width: '310px',
+  width: '300px',
   position: 'right-top', // або будь-яке інше положення, яке ви хочете
-  distance: '30px',
-  fontSize: '16px',
+  distance: '45px',
+  fontSize: '19px',
   fontAwesomeIconSize: '30px',
+  warning: {
+    textColor: 'black',
+  },
   // додаткові параметри
 });
 

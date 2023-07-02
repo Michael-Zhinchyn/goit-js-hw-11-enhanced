@@ -105,11 +105,12 @@ b {
 
 .volume {
     position: absolute;
-    top: 15px;
-    left: 35px;
-    width: 190px;
+    top: 80px;
+    right: -40px;
+    width: 150px;
     opacity: 0.2;
     transition: opacity 180ms;
+    transform: rotate(-90deg);
 }
 
 .volume:focus {
