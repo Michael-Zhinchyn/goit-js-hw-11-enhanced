@@ -118,11 +118,15 @@
 
     .modal-section {
         margin-bottom: 35px;
-        
+    }
+
+    .site-version {
+        margin-bottom: 14px;
     }
 
     .description {
-        line-height: 1.4;
+        line-height: 1.2;
+        font-size: 17px;
         margin-top: 0;
         margin-bottom: 10px;
     }
