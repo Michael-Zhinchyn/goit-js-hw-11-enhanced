@@ -79,3 +79,11 @@
         stroke-dashoffset: -358;
     }
 }
+
+@media (max-width: 600px) {
+    .loader-main {
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+}
