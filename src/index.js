@@ -1,5 +1,5 @@
-import './js/loader';
 import './js/animation';
+import './js/loader';
 import './js/modal';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
