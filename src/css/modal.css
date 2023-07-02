@@ -1,0 +1,77 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #090a0f00;
+    /* фон модального вікна */
+    z-index: 1;
+}
+
+
+.modal-title {
+    color: rgb(12, 0, 248);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description {
+    color: white;
+    text-align: center;
+    width: 220px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.modal-content {
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    justify-content: space-evenly;
+}
+
+.modal-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-version {
+    color: #FFF;
+    text-align: center;
+}
+
+.ext-link {
+    background: #090a0f00;
+    border-radius: 8px;
+    border: #1c27a2e1 1px solid;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4px;
+    color: #fff;
+    cursor: pointer;
+    width: 220px;
+    height: 56px;
+    text-decoration: none;
+    text-align: center;
+    transition: color var(--basic-transition), border var(--basic-transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.ext-link:hover {
+    background: #090f5325;
+    border-color: #2d3ce2;
+}
+
+.gh-logo-block {
+    margin-top: 20px;
+    text-align: center;
+}

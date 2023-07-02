@@ -1,11 +1,12 @@
 import './js/animation';
+import './js/entrance-modal';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { Notify } from 'notiflix';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 import axios from 'axios';
 
-const form = document.getElementById('search-form');
+export const form = document.getElementById('search-form');
 const gallery = document.querySelector('.gallery');
 const target = document.querySelector('.js-guard');
 
