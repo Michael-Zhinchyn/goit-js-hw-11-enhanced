@@ -103,8 +103,8 @@ input::placeholder {
 
 .to-top-btn {
     position: fixed;
-    bottom: 40px;
-    right: 22px;
+    bottom: 15px;
+    right: 20px;
     width: 28px;
   
     color: rgba(144, 140, 227, 0.564);
