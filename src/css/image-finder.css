@@ -133,7 +133,7 @@ input::placeholder {
     }
 
     .button-text {
-        margin-right: 0;
+        margin-right: 12px;
         text-align: center;
     }
 
