@@ -176,3 +176,14 @@ window.onbeforeunload = function () {
   // Зберігаємо URL сторінки в localStorage перед виходом зі сторінки
   localStorage.setItem('previousPage', window.location.href);
 };
+
+import { toTopBtn } from './js/modal';
+
+window.addEventListener('scroll', () => {
+  console.log(document.documentElement.scrollTop);
+  if (document.documentElement.scrollTop > 500) {
+    toTopBtn.style.display = 'block';
+  } else {
+    toTopBtn.style.display = 'none';
+  }
+});
