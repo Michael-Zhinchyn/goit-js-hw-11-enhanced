@@ -2,8 +2,17 @@ import './js/animation';
 import './js/entrance-modal';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import { Notify } from 'notiflix';
-import { Report } from 'notiflix/build/notiflix-report-aio';
+import Notiflix from 'notiflix';
+
+Notiflix.Notify.init({
+  width: '310px',
+  position: 'right-top', // або будь-яке інше положення, яке ви хочете
+  distance: '30px',
+  fontSize: '16px',
+  fontAwesomeIconSize: '30px',
+  // додаткові параметри
+});
+
 import axios from 'axios';
 
 export const form = document.getElementById('search-form');
@@ -26,12 +35,13 @@ function onSubmit(evt) {
   searchQuery = evt.target.elements.searchQuery.value;
 
   if (searchQuery === '') {
-    Notify.warning('Input field is empty');
+    Notiflix.Notify.warning('Input field is empty');
     return;
   }
 
   getImages();
   currentPage += 1;
+  evt.target.elements.searchQuery.value = '';
 }
 
 // Функція HTTP запиту і отримання фото
@@ -51,7 +61,7 @@ async function getImages() {
     let searchResult = response.data.total;
 
     soundFx.play();
-    Notify.success(`Hooray! We found ${searchResult} images.`);
+    Notiflix.Notify.success(`Hooray! We found ${searchResult} images.`);
 
     gallery.insertAdjacentHTML('beforeend', markUp);
 

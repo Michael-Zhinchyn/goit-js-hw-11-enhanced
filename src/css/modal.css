@@ -104,7 +104,13 @@ b {
 }
 
 .volume {
-    opacity: 0.1;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100px;
+    opacity: 0.25;
+    transform: rotate(-90deg);
+    
 }
 
 .volume:hover {
