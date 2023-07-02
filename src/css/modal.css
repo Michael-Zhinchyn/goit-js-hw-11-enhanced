@@ -119,6 +119,8 @@ b {
 
 @media screen and (max-width: 600px) {
 
+   
+
     .modal-title {
         top: 30px;
         font-size: 26px;
@@ -162,6 +164,13 @@ b {
 
     .ext-link {
         width: 100%;
+    }
+
+    .volume {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        overflow: hidden;
     }
 
 
