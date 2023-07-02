@@ -82,7 +82,7 @@
 
 @media (max-width: 600px) {
     .loader-main {
-        top: 43%;
+        top: 42%;
         left: 50%;
         transform: translate(-50%, -20%);
     }
