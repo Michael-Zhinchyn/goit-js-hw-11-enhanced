@@ -91,17 +91,19 @@
     position: absolute;
     color: rgba(155, 151, 228, 0.436);
     bottom: 0;
-    right: 1%;
+    right: 2%;
     font-size: 14px;
 }
 
 @media screen and (max-width: 600px) {
 
     .modal-title {
-        font-size: 28px;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
-        border-radius: 4px;
+        font-size: 26px;
+        margin-bottom: 0px;
+    }
+
+    .about {
+        margin-top: 0px;
     }
 
     .modal-content {
@@ -113,7 +115,7 @@
     }
 
     .modal-section {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 
     .description {
@@ -126,9 +128,7 @@
         width: 100%;
     }
 
-    .about {
-        margin-top: 0;
-    }
+
 }
 
 /* Media query for medium screens (tablet) */
@@ -139,5 +139,7 @@
 
     .ext-link {
         width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
