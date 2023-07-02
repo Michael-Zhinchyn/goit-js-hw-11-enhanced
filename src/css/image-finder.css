@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .search-form {
     display: flex;
     justify-content: center;
@@ -18,11 +26,11 @@ button {
     font-size: 18px;
     line-height: 1.4px;
     color: rgb(124, 120, 207);
-    
     cursor: pointer;
-    width: 220px;
+    width: 100%;
     height: 56px;
     transition: color var(--basic-transition), border var(--basic-transition);
+    padding: 0 15px;
 }
 
 button:hover {
@@ -49,9 +57,9 @@ button:hover {
 input {
     padding: auto;
     font-size: 24px;
-    letter-spacing:2px;
+    letter-spacing: 2px;
     text-align: center;
-    width: 350px;
+    width: 100%;
     height: 56px;
     background-color: #00000000;
     color: rgb(210, 209, 232);
@@ -164,4 +172,5 @@ input::placeholder {
         border-radius: 20px;
         text-align: center;
     }
+
 }
