@@ -8,7 +8,7 @@ Notiflix.Notify.init({
   width: '300px',
   position: 'right-top', // або будь-яке інше положення, яке ви хочете
   distance: '45px',
-  fontSize: '19px',
+  fontSize: '18px',
   fontAwesomeIconSize: '30px',
   warning: {
     textColor: 'black',
