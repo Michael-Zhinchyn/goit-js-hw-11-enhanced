@@ -103,6 +103,14 @@ b {
     font-size: 14px;
 }
 
+.volume {
+    opacity: 0.1;
+}
+
+.volume:hover {
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 600px) {
 
     .modal-title {
