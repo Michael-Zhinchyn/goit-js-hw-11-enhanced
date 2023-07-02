@@ -91,7 +91,7 @@
     text-align: center;
 }
 
-b {
+.bold {
     color: rgb(155, 151, 228); 
 }
 
@@ -105,8 +105,8 @@ b {
 
 .volume {
     position: absolute;
-    top: 40px;
-    right: -20px;
+    top: 30px;
+    right: -24px;
     width: 100px;
     opacity: 0.2;
     transition: opacity 180ms;
