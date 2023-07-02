@@ -100,7 +100,7 @@
 
 .footer {
     position: absolute;
-    color: rgba(155, 151, 228, 0.436);
+    color: rgb(155, 151, 228);
     bottom: 0;
     right: 2%;
     font-size: 14px;
