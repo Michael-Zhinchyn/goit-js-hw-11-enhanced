@@ -101,7 +101,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(206, 205, 235, 0.322);
+    background: rgba(144, 140, 227, 0.313);
     border-radius: 8px;
     transition: background var(--basic-transition);
 }
