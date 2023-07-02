@@ -102,6 +102,7 @@ input::placeholder {
 }
 
 .to-top-btn {
+    display: none;
     position: fixed;
     bottom: 15px;
     right: 20px;

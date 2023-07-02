@@ -107,6 +107,7 @@
 }
 
 .volume {
+    display: none;
     position: absolute;
     top: 35px;
     right: -24px;

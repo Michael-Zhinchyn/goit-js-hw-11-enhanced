@@ -1,3 +1,4 @@
+import './js/loader';
 import './js/animation';
 import './js/modal';
 import SimpleLightbox from 'simplelightbox';
