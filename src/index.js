@@ -35,15 +35,10 @@ let soundPlayed = false;
 form.addEventListener('submit', onSubmit);
 
 async function onSubmit(evt) {
-  // зробіть функцію асинхронною
   evt.preventDefault();
-
-  // Очищаємо галерею перед новим пошуком
   gallery.innerHTML = '';
-  // Скидаємо значення флажків
   successMessageShown = false;
   soundPlayed = false;
-
   searchQuery = evt.target.elements.searchQuery.value;
 
   if (searchQuery === '') {
@@ -171,8 +166,6 @@ function onLoad(entries, observer) {
   });
 }
 
-// При виході зі сторінки
 window.onbeforeunload = function () {
-  // Зберігаємо URL сторінки в localStorage перед виходом зі сторінки
   localStorage.setItem('previousPage', window.location.href);
 };
