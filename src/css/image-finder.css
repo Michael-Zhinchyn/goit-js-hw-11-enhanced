@@ -130,6 +130,8 @@ input::placeholder {
 }
 
 
+
+
 @media screen and (max-width: 600px) {
     .search-form {
         flex-direction: column;
