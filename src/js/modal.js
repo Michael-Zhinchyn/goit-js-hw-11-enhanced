@@ -5,8 +5,6 @@ const volumeSlider = document.getElementById('volumeSlider');
 const toTopBtn = document.querySelector('.to-top-btn');
 const toBackBtn = document.querySelector('.back-link');
 
-console.log(toBackBtn);
-
 toTopBtn.style.display = 'none';
 toBackBtn.style.display = 'none';
 volumeSlider.style.display = 'none';
