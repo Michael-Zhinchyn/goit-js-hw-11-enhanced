@@ -43,7 +43,7 @@ function onClick(evt) {
   form.style.display = 'flex';
   modal.style.display = 'none';
   toTopBtn.style.display = 'block';
-  toBackBtn.style.display = 'block';
+  toBackBtn.style.display = 'inline-block';
   player.playVideo();
 }
 
