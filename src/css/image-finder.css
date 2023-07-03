@@ -102,6 +102,7 @@ input::placeholder {
 }
 
 .go-back-btn {
+    display: none;
     position: absolute;
     top: 15px;
     left: 25px;
