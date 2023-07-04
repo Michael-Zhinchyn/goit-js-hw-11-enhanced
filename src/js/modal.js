@@ -32,7 +32,7 @@ window.onYouTubeIframeAPIReady = function () {
 
 function onPlayerReady(event) {
   event.target.stopVideo();
-  event.target.setVolume(30);
+  event.target.setVolume(36);
 }
 
 closeModalBtn.addEventListener('click', onClick);
