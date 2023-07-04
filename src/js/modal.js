@@ -23,7 +23,7 @@ window.onYouTubeIframeAPIReady = function () {
     height: '390',
     width: '640',
     videoId: '3rmWJAQ0Na4',
-    playerVars: { autoplay: 0, controls: 1, origin: window.location.origin },
+    playerVars: { autoplay: 0, controls: 1 },
     events: {
       onReady: onPlayerReady,
     },
