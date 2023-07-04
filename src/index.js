@@ -40,7 +40,7 @@ async function onSubmit(evt) {
   gallery.innerHTML = '';
   successMessageShown = false;
   soundPlayed = false;
-  searchQuery = evt.target.elements.searchQuery.value;
+  searchQuery = evt.target.elements.searchQuery.value.trim();
 
   if (searchQuery === '') {
     Notiflix.Notify.warning('Input field is empty');
