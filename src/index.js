@@ -83,6 +83,7 @@ async function getImages() {
 
     if (searchResult === 0) {
       Notiflix.Notify.failure('Nothing found by Your request...');
+      return;
     }
 
     gallery.insertAdjacentHTML('beforeend', markUp);
