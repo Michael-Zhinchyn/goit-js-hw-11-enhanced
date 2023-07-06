@@ -1,6 +1,6 @@
-#JavaScript module-11 homework
+# JavaScript module-11 homework
 
-##Using pixabay.com API to create an image search for a user query.
+## Using pixabay.com API to create an image search for a user query.
 
 - The project is assembled using the parcel-project-template
 - Axios library for HTTP requests
