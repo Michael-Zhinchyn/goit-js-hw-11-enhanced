@@ -4,7 +4,7 @@
 
 - The project is assembled using the parcel-project-template
 - Axios library for HTTP requests
-- Async/Await syntax
+- Async / Await syntax
 - Notiflix library for notifications
 - SimpleLightbox for responsive lightbox popup
 - Pagination
